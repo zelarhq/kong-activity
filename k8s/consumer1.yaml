@@ -1,0 +1,10 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongConsumer
+metadata:
+  name: consumer1 
+  annotations:
+    kubernetes.io/ingress.class: kong
+    konghq.com/plugins: rl-by-consumer1
+username: consumer1 
+credentials:
+- consumer1-apikey
